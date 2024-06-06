@@ -8,7 +8,6 @@ html, body{
 }
 .bio {
     margin: auto;
-    max-width:50%;
     padding-top: 90px;
     padding-bottom: 45px;
     text-align: center;
@@ -17,7 +16,7 @@ html, body{
     border-radius: 50%;
 }
 .gallery{
-    max-width:70%;
+    max-width:90%;
     margin: auto;
     padding-bottom: 90px;
  }
