@@ -1,3 +1,56 @@
-<h1> Video </h1>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/87PJHC0ArO8?si=Pm87-3tuS6iAbGdr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<h1> Audio </h1>
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FLL CRCL (Full Circle)</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Musical hallucinations cloud my mind. FLLCRCL (Full Circle) is inspired by: Hans Zimmer, Bear McCreary, Ramin Djawadi, John Powell, A.R. Rahman, Tool, Linkin Park, Thomas Newman, Ludwig Göransson, John Williams, Lupe Fiasco, Mike Shinoda, The Who, Fever 333, The Police, Tesseract , Zakir Hussain, Tinariwein and so much more. Scoring, Production and Sound Engineer for Hire.">
+  <link rel="icon" href="./favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+</head>
+<body class="gallery">
+    <div class="bio">
+        <img src="./icon.png" class="profile">
+        <p>
+            <strong>Musical hallucinations cloud my mind.</strong></br></br>
+            FLLCRCL "Full Circle" is inspired by: Hans Zimmer, Bear McCreary, Ramin Djawadi, John Powell, A.R. Rahman, Tool, Linkin Park, Thomas Newman, Ludwig Göransson, John Williams, Lupe Fiasco, Mike Shinoda, The Who, Fever 333, The Police, Tesseract , Zakir Hussain, Tinariwein and so much more.</br></br>
+            Scoring, Production and Sound Engineer for Hire.</br>
+        </p>
+    </div>
+    <div class="tab">
+        <button class="tablinks" onclick="openView(event, 'Audio')" id="defaultOpen">Audio</button>
+        <button class="tablinks" onclick="openView(event, 'Video')">Video</button>
+    </div>
+    <div id="Audio" class="tabcontent">
+        <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1833498855&color=%231b161d&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
+        <iframe width="100%" height="350" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1779181059&color=%233b351d&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
+        <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1779172557&color=%233b351d&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
+        <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1779169257&color=%233b351d&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
+        <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1778634807&color=%233b351d&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
+        <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1779139821&color=%233b351d&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
+    </div>
+    <div id="Video" class="tabcontent">
+        <iframe width="100%" height="450" src="https://www.youtube.com/embed/EQLxaLuwhGI?si=TVqQwpF1NnpTcyuX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="100%" height="450" src="https://www.youtube.com/embed/ywz5MjdZaHw?si=aNY-Qrv61glVyUko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="100%" height="450" src="https://www.youtube.com/embed/87PJHC0ArO8?si=sIgfDXsQ-s3SDkwi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</body>
+<script>
+    document.getElementById("defaultOpen").click();
+    function openView(evt, viewName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(viewName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    </script>
+</html>
